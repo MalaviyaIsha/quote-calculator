@@ -27,6 +27,11 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "isha.malaviya@exhibytesolution.com"
+          git config --global user.name "MalaviyaIsha"
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
