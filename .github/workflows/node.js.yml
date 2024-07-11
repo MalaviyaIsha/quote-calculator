@@ -26,9 +26,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
 
-      - run: npm i
-      - run: npm run build -- --public-url https://malaviyaisha.github.io/${{ github.event.repository.name }}
-
       - name: List files for debugging
         run: ls dist
 
