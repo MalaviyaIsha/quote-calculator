@@ -6,9 +6,10 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "source": "src/index.html",
   "scripts": {
-    "deploy": "gh-pages -d dist",
-    "start": "parcel --no-source-maps",
-    "build": "parcel build --no-source-maps"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
