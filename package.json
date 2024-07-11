@@ -3,16 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel src/index.html --no-source-maps",
-    "build": "parcel build src/index.js --no-scope-hoist --no-source-maps"
+    "start": "parcel --no-source-maps",
+    "build": "parcel build --no-source-maps"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@parcel/config-default": "^2.12.0",
     "@parcel/transformer-typescript-tsc": "^2.12.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
