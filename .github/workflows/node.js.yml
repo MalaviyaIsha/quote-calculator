@@ -27,7 +27,7 @@ jobs:
           cache: "npm"
 
       - run: npm i
-      - run: npm run build
+      - run: npm start
 
       - name: List files for debugging
         run: ls -la
