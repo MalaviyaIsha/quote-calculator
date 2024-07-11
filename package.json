@@ -7,7 +7,7 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel --no-source-maps",
-    "build": "parcel build --public-url /quote-calculator/ --no-source-maps"
+    "build": "parcel build src/index.html --public-url /quote-calculator/ --no-source-maps"
   },
   "author": "",
   "license": "ISC",
