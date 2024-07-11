@@ -26,8 +26,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
 
+      - run: npm i
+      - run: npm run build
+
       - name: List files for debugging
-        run: ls dist
+        run: ls -la
 
       - name: Deploy with gh-pages
         run: |
