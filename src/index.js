@@ -1,7 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
+import { createRoot } from "react-dom/client";
+import App from "./App";
 
-const App = () => <div>Hello, React with Parcelll!</div>;
-
-ReactDOM.render(<App />, document.getElementById("app"));
+const container = document.getElementById("app");
+const root = createRoot(container);
+root.render(<App />);
